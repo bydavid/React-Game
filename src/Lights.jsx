@@ -14,6 +14,7 @@ export default function Lights()
 
     return <>
         <directionalLight
+            ref = { light }
             castShadow
             position={ [ 4, 4, 1 ] }
             intensity={ 1.5 }
