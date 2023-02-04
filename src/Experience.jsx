@@ -4,6 +4,7 @@ import { Level } from './Level.jsx'
 import { Physics, Debug } from '@react-three/rapier'
 import Player from "./Player.jsx";
 import useGame from './stores/useGame'
+import Effects from "./Effects.jsx";
 
 export default function Experience()
 {
@@ -12,7 +13,7 @@ export default function Experience()
 
     return <>
 
-        <color args={ [ '#bdedfc' ] } attach="background" />
+        <color args={ [ '#252731' ] } attach="background" /> {/*Sky colours*/}
 
         {/*<OrbitControls makeDefault />*/}
 
@@ -23,5 +24,6 @@ export default function Experience()
             <Player />
         </Physics>
 
+        <Effects />
     </>
 }
