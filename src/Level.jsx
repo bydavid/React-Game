@@ -11,8 +11,8 @@ const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
 
 const floor1Material = new THREE.MeshStandardMaterial({ color: '#111111', metalness: 0, roughness: 0 })
 const floor2Material = new THREE.MeshStandardMaterial({ color: '#222222', metalness: 0, roughness: 0 })
-const obstacleMaterial = new THREE.MeshStandardMaterial({ color: 'orangered', metalness: 0, roughness: 0 })
-const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategrey', metalness: 0, roughness: 0 })
+const obstacleMaterial = new THREE.MeshStandardMaterial({ color: 'lightgreen', metalness: 0, roughness: 0 })
+const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategray', metalness: 0, roughness: 0 })
 
 
  export function BlockStart({ position = [ 0, 0, 0 ]})

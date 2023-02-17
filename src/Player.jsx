@@ -78,6 +78,9 @@ export default function Player()
 
     useFrame((state, delta) =>
     {
+        /**
+         * Controls
+         */
         const { forward, backward, leftward, rightward } = getKeys()
 
         const impulse = { x: 0, y: 0, z: 0 }
@@ -113,6 +116,9 @@ export default function Player()
         body.current.applyImpulse(impulse)
         body.current.applyTorqueImpulse(torque)
 
+        /**
+         * Camera
+         */
         const bodyPosition = body.current.translation()
 
         const cameraPosition = new THREE.Vector3()
@@ -152,7 +158,7 @@ export default function Player()
     >
         <mesh castShadow>
             <icosahedronGeometry args={ [ 0.3, 1 ] } />
-            <meshStandardMaterial flatShading color="mediumpurple" />
+            <meshStandardMaterial flatShading color="gray" />
         </mesh>
     </RigidBody>
 }
