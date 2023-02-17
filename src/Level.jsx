@@ -11,7 +11,7 @@ const boxGeometry = new THREE.BoxGeometry(1, 1, 1)
 
 const floor1Material = new THREE.MeshStandardMaterial({ color: '#111111', metalness: 0, roughness: 0 })
 const floor2Material = new THREE.MeshStandardMaterial({ color: '#222222', metalness: 0, roughness: 0 })
-const obstacleMaterial = new THREE.MeshStandardMaterial({ color: 'lightgreen', metalness: 0, roughness: 0 })
+const obstacleMaterial = new THREE.MeshStandardMaterial({ color: '#E694BD', metalness: 0, roughness: 0 })
 const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategray', metalness: 0, roughness: 0 })
 
 
@@ -21,7 +21,7 @@ const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategray', metaln
         <Float floatIntensity={ 0.25 } rotationIntensity={ 0.25 }>
             <Text
                 font="./bebas-neue-v9-latin-regular.woff"
-                scale={ 1 }
+                scale={ .65 }
                 maxWidth={ 0.25 }
                 lineHeight={ 0.75 }
                 textAlign="right"
@@ -102,7 +102,7 @@ const wallMaterial = new THREE.MeshStandardMaterial({ color: 'slategray', metaln
 
 export function BlockEnd({ position = [ 0, 0, 0 ] })
 {
-    const hamburger = useGLTF('./hamburger.glb')
+    const hamburger = useGLTF('./snowman.glb')
     hamburger.scene.children.forEach((mesh) =>
     {
         mesh.castShadow = true
@@ -124,7 +124,7 @@ export function BlockEnd({ position = [ 0, 0, 0 ] })
         <Text
             font="./bebas-neue-v9-latin-regular.woff"
             scale={ 8 }
-            position={ [ 0, 2.25, 2 ] }
+            position={ [ 0, 4.25, 2 ] }
         >
             FINISH
             <meshBasicMaterial toneMapped={ false } />
